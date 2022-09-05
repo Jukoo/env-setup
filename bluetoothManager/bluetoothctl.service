@@ -1,0 +1,11 @@
+[Unit] 
+Description=bluetooth device controler
+After=bluetooth.target
+
+
+[Service] 
+Type=simple
+ExecStart=/usr/bin/bluetoothctl  power on 
+
+[Install] 
+WantedBy=multi-user.target
